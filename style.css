@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . gmail image menu sign-in";
+}
+
+a {
+    text-decoration: none;
+}
+
+#about {
+    grid-area: about;
+}
+
+#store {
+    grid-area: store;
+}
+
+#gmail {
+    grid-area: gmail;
+}
+
+#image {
+    grid-area: image;
+}
+
+#menu {
+    grid-area: menu;
+}
+
+#sign-in {
+    grid-area: sign-in;
+}
