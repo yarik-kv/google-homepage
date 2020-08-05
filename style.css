@@ -55,4 +55,35 @@ a {
 
 #main {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas: ". logo ." ". search ." ". flexbox." ". google-text .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+
+#search {
+    grid-area: search;
+    height: 25px;
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+}
+
+#google-search-btn {
+    grid-area: google-search-btn;
+}
+
+#random-search-btn {
+    grid-area: random-search-btn;
+}
+
+#google-text {
+    grid-area: google-text;
 }
