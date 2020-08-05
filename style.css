@@ -3,6 +3,9 @@ html {
     min-height: 100%;
 }
 
+
+/* Navbar section */
+
 #navbar {
     display: grid;
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
@@ -10,7 +13,8 @@ html {
     grid-template-areas: "about store . gmail image menu sign-in";
 }
 
-a {
+a,
+p {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.87);
     font-size: 13px;
@@ -53,6 +57,9 @@ a {
     align-self: center;
 }
 
+
+/* Main section */
+
 #main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -68,22 +75,28 @@ a {
 
 #search {
     grid-area: search;
-    height: 25px;
+    height: 30px;
+    align-self: center;
 }
 
 #flexbox {
     display: flexbox;
     grid-area: flexbox;
-}
-
-#google-search-btn {
-    grid-area: google-search-btn;
-}
-
-#random-search-btn {
-    grid-area: random-search-btn;
+    align-self: center;
+    justify-self: center;
 }
 
 #google-text {
     grid-area: google-text;
+    justify-self: center;
+}
+
+
+/* Footer Section */
+
+#footer {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 1fr 100px 100px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas: "";
 }
